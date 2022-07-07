@@ -1,0 +1,119 @@
+@font-face {
+    font-family: GoogleSans;
+    src: url(https://fonts.gstatic.com/s/googlesans/v14/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2);
+    font-weight: normal;
+}
+
+/* RESET CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: GoogleSans, Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+}
+
+#main {
+    overflow: hidden;
+}
+
+/* END: RESET */
+
+/* COMMON */
+
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.header {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.header__logo {
+    position: absolute;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    max-width: 530px;
+    padding: 0px 16px 16px;
+    margin: 32px auto;
+    text-align: justify;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.content p {
+    font-size: 15px;
+}
+
+.content p + p {
+    margin-top: 16px;
+}
+
+.contact {
+    background-color: #333;
+    color: #fff;
+    height: 106px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.contact__socials a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 16px;
+}
+
+.contact__socials, .contact__support {
+    display: block;
+}
+
+.contact__support {
+    font-size: 13px;
+    margin-top: 16px;
+    font-style: italic;
+}
+
+.sign {
+    padding: 16px;
+    width: 400px;
+}
+
+.sign__heading {
+}
+
+.sign__heading h3 {
+    color: #4285F4;
+    font-size: 16px;
+}
+
+.sign__heading p {
+    font-size: 14px;
+    color: #555555;
+}
+
+.sign__contact {
+    padding: 16px 0;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.sign__logo img {
+
+}

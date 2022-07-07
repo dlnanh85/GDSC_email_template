@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="./main.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @font-face {
+    font-family: GoogleSans;
+    src: url(https://fonts.gstatic.com/s/googlesans/v14/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2);
+    font-weight: normal;
+}
+
+/* RESET CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: GoogleSans, Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+}
+
+#main {
+    overflow: hidden;
+}
+
+/* END: RESET */
+
+/* COMMON */
+
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.header {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.header__logo {
+    position: absolute;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    max-width: 530px;
+    padding: 0px 16px 16px;
+    margin: 32px auto;
+    text-align: justify;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.content p {
+    font-size: 15px;
+}
+
+.content p + p {
+    margin-top: 16px;
+}
+
+.contact {
+    background-color: #333;
+    color: #fff;
+    height: 106px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.contact__socials a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 16px;
+}
+
+.contact__socials, .contact__support {
+    display: block;
+}
+
+.contact__support {
+    font-size: 13px;
+    margin-top: 16px;
+    font-style: italic;
+}
+
+.sign {
+    padding: 16px;
+    width: 400px;
+}
+
+.sign__heading {
+    
+}
+
+.sign__heading h3 {
+    color: #4285F4;
+    font-size: 16px;
+}
+
+.sign__heading p {
+    font-size: 14px;
+    color: #555555;
+}
+
+.sign__contact {
+    padding: 16px 0;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.sign__logo img {
+
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header__logo full-height">
+            <img class="full-height" src="https://lh3.googleusercontent.com/fife/AAWUweUfJnBMG4U3IlGe0Gdlr2TX4nTDbOepngW9kX_Pkww5H9TV32oueZHxr606I4SAmXedx57RdYpn9DOccFxjw000suOhONCNQL8qidKXKvqb-O02mT8M49KHW66xUJ7azVDWmYCceZWGaHaROuiq9AKOT1Oho7w9W1U9WNVK7RjCZq1JG-lgrv2uqOktyQcye19dSWtcyklBUR31plunDUCNUi7OCdGAMlt6nGDktl5CmO8ID3IVAu89F7VQx4gu4b-oqxsvPt6vzxD-82Pzr5W_K5cvKc166BZyvUoKL6PSxRd1WLqt3r4rDFOQGM0c_cYJD3Qse7mKiGN6_aS32RvOY-_Iz__dBWW6Mmbxj0a5JIn164jazsyG9aS8mfjJ5N_zLK4Er0XKUIxI17iCO4QemmTjYk3Cg6w5a0kGsc7eVYzwAuVdR-GY-PDU5fxeYWq7noOwpFaq3F7SMUaEPKRGwEkStxZ-1dZLuLNAOzJI-6Q-8IfVQadgoGeaVp_oRaxhkyZqrHkWJhSMW-WgFm9Le7X6p9-wyNEkqudwTWGqcXdjArmdZQgxFf19erxY6HtN2uNS6YeESQOz-7BbFqAKHZ-uUevlG02_WGYEFX3QwI7AzlVE2MsjEzs0JA9gBeyntcQeSI8hx3TAlj5jgnv6LHAjO5RyFHGLwrPZiwg20iX4yOYKbfQnPKjV5qTEXCuxNIVvz3Lpzj-93-o2Z-PZ0buU4vtAA6InqM7ZJAYJknjmLvFe75hWldjRVahqR5NcV1-2ENAbZTk3A03dJQABGiXDHzGTdNhElNeqQW7_4I1EyAfs0kFwAfOGwmmrfQ_BN3Mqe-diioUPQYM9s3POUa4Gkd-7Fvwt2TEn0iMiOnei43hzkdOmizEELQHzo7bQeEsjeTPRl4ewKqrV8AXHeUrR9YkZ0HGEJwhhqV7-iXPTJK632Tsi_876_Q4Y5-aa-YUkxZs62Osiw1PdoPRuBTr4Lzk5cRTjBGzfB3z3y_N6YUTgif4LHEC890mJlNExFEeMtuSzPueOmincX__Fd-1XTNrw8A6X2v5jZUISEdGc0JE-mFcgc5M5YFLADKvlcQwJNFbO-pBq2dlCi2qPGMFjQGObBk1QpvkpefVqeMK5pxD2EbmRKn5EJ11SquMAiYK5OW5oNjcKMPkGDdZyBTTWtjYDXvu79kWkzVyOgmFvMbrVRImQYj8_6hOb4HS-dQrsE2gBGGVBOzFILEDYy9EXKT4I7dYfmfjRy1dMUwKqo9ijmfeJ_oID4CtcIuWpS022bEK_XFSMCwBfQ8PD3zEuztHqPTHi98wutNStML-RTT7o5Doe4b1TpeR4LT3YC9agD0p0lE1eT2WGc1IPFPJThS-dokTW5PRqAHrA-4Q6IVrahmfBchReOP4QS_6JSv5PuP4PlOET2gl7KfBSLSBMUK5KcrmNPqNLtPP55KyLNP5lF0O1rTLoRtH_ASioFl8vksuTueFmPjb7DL5n53QQM4KNjAXPjI_vX_cNNjibCGc7WDZ_h_iGuA=w973-h858" alt="GDSC_logo">
+        </div>
+        <div class="header__background full-width">
+            <img class="full-width" src="https://lh3.googleusercontent.com/fife/AAWUweUGvOq9ekcmcDUuwRyiPsc5gWa_l2GglkLxxkcuyoid5ibDbT7Vd8Q7FmB-kAJPrOfvCxWbfzssI92t0uMcBdGLz-AZVlg9L2JtvdSLfI3mbVVlXdhWDdDupWbrSo6NDXbA5qxN5eRX2WsKJNKhfjbV0LQbZmO3eIrEvUqiWXABVJ8upnQLYYiQ7k4F8sw9m2dPGXrLLreedwRbIpI358D9s8CsY6iB9lFs30ln5FLGIj0nqzqoe-AIBkXzm4bj1T4zBxhCjQVJ1nTWsqyAdthCe3D8lkYgcKnprKJbnpJ3KysZBpernurbr-55iV3m-UCMmE76PfHrs0E8tbjS_sVGKbtaPparoTl9b1aKjxNz5Zfukn-0YLL9PO1ktENd-jEmhxs2gXDvXKg6gtMVCSWoxR_ohILmRVuuFJbMYxEbXcctms4v3oeOisQvfczkkbFzlHP99uZku9NPr0GUOa-cullsLFdsWKu1u1oRkN-IMnaXym9x1bPzeBjWlM7v-n0bTnuyjKTPIXccPfKg4QMgjicGKl-EoikqKqnmLRimpSfYk2LYnqdM1HOQSi8oJIbxQvp9H2KYkib-UbX4e4R10BSKvIt2fdw5zPP-ojzBKKumAqUIWSA7y6472LX5zjd4Utaou1WgdKyL55SdKfTGChfc-whLRFO3ZyvPvnzvrqNLI8BB8wJtCKfh3W4Yxe667IF5zeY5ASXDgJLnS6Xz7l-09WKUtpBeXuXYbqiJpbKCXBf2vd1ZewA7xkW2ykXvpU_ZcpWPhwC_Bysv4ZwtsmFZnoB5eaZ-zz3PYNwjsgF9dLE2-LDaFB9Hczd1r-tBMCJ-JAVj4IuAxsvlXg-YIEBT-zKZseizkUxKhAeGOwhfRW5lll-wlnE0G71OoC4rwSmcjCcPso0_iakmNvysO_jMiuH-D6UanfJaVN6y_IuDr8mp_xS6LbbdYK_fZ-SHkrQ32l1dmlqfHE4jKZeffY2P_ng3Y4wV_N3cVZVVCqoJ-rqwaoOXikraKVW33cSF-JHlvK_rxXFTxA0oXd8IEa4E7UaGv56y8FGjLou2V3QIggoWdRuUr837eUyA1ansmjpuzZpdpmhfx-HWSxSyrP1oyutaMFnaQM7VVFCBSVNmuJcFrxbUbI9o8tw-gMr4xTsFwpdBT6ldxjTK5nObxEGJxCqAirjhOTPyk7erNreykemzYQYE27OX3WyOUo86qXAO7MFJ18Q9AIHicKlc1QV5koSqrnnuneiAe4ebK9HTv2ppt9E4LZ5tpBXAe69OUyWOD_28vQCimbibVdt5qYqRW3r4G0hJlykSV199czhiPUKqprhxc55rdSa4_6TJYRt8I98_Yu584FfJVW7UlosOOQHt92ZgsDrn5uKYu9sE1_5wra7Ewtxq2QZemY_sry5VL2_1uLKu4Ch94Tdmd4fdiYlIzLzlT1cDo5WHCVUn7DO0J7Z2ot_eVe6U5g9gYP2n-nbbDifsAur_041cbM_ysAYjXP19aO2qPTihfr0qL1yQ9tiTQGosiQ=w973-h858" alt="GDSC_background">
+        </div>
+    </div>
+
+    <div class="content">
+        <p>
+            Thank you for your application for the Innovation Function at Google Developer Student Club HCMUT. We hope the probation period has been enjoyable for you as much as it has been for us.
+        </p>
+
+        <p>
+            After careful consideration, we have finally decided on your probation result. We regret to inform you that you will have to save a lot of energy for GDSC’s next moves because you are now officially an Organizer of GDSC HCMUT!
+        </p>
+
+        <p>
+        During the probation period, you have shown not only great competence and skills in what you do, but also how fit you are with GDSC’s values. We believe that you will show even more of your capabilities in the remaining term.
+        </p>
+
+        <p>
+            We hope your upcoming journey with GDSC will be an amazing one, where you can further develop your skills while contributing to the GDSC community. Once again, we are really grateful to have you in our team.
+        </p>
+    </div>
+
+    <div class="contact">
+        <div class="contact__socials">
+            <a href="" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="" class="web"><i class="fa-solid fa-link"></i></a>
+            <a href="" class="email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <div class="contact__support">
+            <p>Supported by Google Developers</p>
+        </div>
+    </div>
+
+    <div class="sign">
+        <div class="sign__heading">
+            <h3>Nguyen Phung Hai Dang (Mr.)</h3>
+            <p>Head of Innovation Function</p>
+        </div>
+        <div class="sign__contact">
+            <p><b>Email:</b> dangnguyen@gmail.com</p>
+            <p><b>Phone:</b> 0914396769</p>
+            <p><b>Facebook:</b> Dang Nguyen</p>
+        </div>
+        <div class="sign__logo full-width">
+            <img class="full-width" src="https://lh3.googleusercontent.com/fife/AAWUweVu2CC-pe68VWltC0ZKIDqAqaDLzAU5wB_2v-x7dKXcsIgTmre6MxyNEjViicN2yGchY3sa8wGlA8FU9o_0ZCGrFBwKwoqcHBx_hFe_de6R46pY26-ktmC4uLiZlEDWsC_1XgHENlAm2mbfkJDjIljUKjnVl8BGZt04beA3sa-xUEXEksj58gKtM8CZw0mJONJtCy4qZku7Jbc6LPrFFxqhAgv8qAYjGNFvxVBrvinBCMtEiCMYF7iroIYUg58xZal_1WcEaEmOsgA3FV9RGYyC7fhVylv5IuJPqpNutxhfFTDsBEuk4GTfy2ij3dQhxKgaLc8IRqr1gA_zCbq2SGoYPPmzmxloDtBFmkE45bzp33J9qqJX8YnRyMsYjMXiE_08xZF-ioBvYhi3ZOW1naKnCj6IbDGs25bgRzyc_VFwh297hHVoB7IAXKhwBThL-UL9cBP4E30bYAQQYaRGXvx3bDDnqR--I8ZczN1tLC2HsWF98LWO4NxmjyIn8ABExzho4l5EczTxpUJ6IbwkD_duVktWIBXk2o3MBRqDPmruIcEWW3XyZ0mvu77cyv3yuGOX3QqF5SQVL-Y_IIE66kFr7iBJmwcsD0X4QVIiWHMXnvnCFNBdNIpQLqgOwWca21STN9Q6LxnB4zicSQfokbNIeqje0_n9g5TDBtBaj89fOVi-bvQZMKdO7tPPZFfvr6utKEFrCxEJc5MOD7gw2GLXpMHpuamaAyFN_w9agjwfW5YvQ77KFT1L3Q73LcxfAv9BpaAUkkX0Vf915j_VVN5AxCdeTeGRvgOnWGXUNyDBoZ7UnjNzUCT3NCaEL0lTO0uG708isOQW3wqXV8aHC-n2kv7PonRJzZEasqFmJW0pLcg8snC8MMqkWwFkplvvUFqCWdB6XKbbRvLq7yrC8tdl55NnEH2ksc4dHd-gk30OvuAWUJAPeXoKbGlk-AM1Fj3hI6Zd7DlGOotBb1l6Zaz_mjgrJhTt1vHOTTUACZh0YRXgrISR-Vg6WzJKE9KZ80hjoVZQ7Sm3-7YBhkvqMQVzovwyEfX3YYC17x0Nd2s56RSUikwixSt6mhvVTZb0_5gMOXgwoZjGZIBlk1UdISAkugM3Z_iJ5tcSQ9m8_G_zXJ-EWcvFplGnPu5ZREcWeuhuFt6eMOzq5gcl3flOkWpYlHAhrp-6fezDgX-6mp5NhZ7G3mBaZx_KLed51naTytzQIojhbU2wxkfCygNU12ukHIT1LIzTFLRJ9Il87lq6FELwd1fpfRyYgpHY5DOiYtdPCjjvO3imy7H5CTPNiF-JycpiRohbcK2tCw9lFtVr_5a32giqTnGMFzBdC8RUOsdLMphPF9VudJMcsVX-dtmrAQm4xpCDBSCpC9jjQBO-10fVBC1NmqOU87Rt9TByIECYTe3Qsoc-C5tbGlRE8DImb09y6TFSuNWqnZckEhMOUuDYNBZe2w85UKqOrNuOWVdHAnVgmFmBY_AgQq5u74l5T0oHrmULa5NT7SzsqQUtn_ItKFqcsiLfRv_5RQ=w973-h858" alt="GDSC_logo">
+        </div>
+    </div>
+</body>
+</html>
